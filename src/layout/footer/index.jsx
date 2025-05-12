@@ -5,7 +5,7 @@ import styles from "./style.module.scss";
 const Footer = () => {
   return (
     <div className=" flex items-center justify-between bg-black w-[100%]">
-      <div className="menu flex gap-50 py-8 items-center justify-center flex-wrap mx-10">
+      <div className="menu flex gap-30 py-8 items-center justify-between flex-wrap mx-10">
         <ul className="text-[#A1A1AA] flex flex-col gap-4">
           <li>
             <img
