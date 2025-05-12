@@ -1,0 +1,33 @@
+.boxImg {
+  &:hover {
+    cursor: pointer;
+    .boxBody {
+      button {
+        opacity: 1;
+        padding-top: 20px;
+      }
+    }
+  }
+  .boxBody {
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+
+    h2 {
+      color: #fff;
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+    }
+    h3 {
+      color: #ffffffaf;
+      font-size: 15px;
+    }
+    button {
+      transition: 0.3s ease-in-out;
+      font-size: 18px;
+      opacity: 0;
+      color: #fff;
+    }
+  }
+}

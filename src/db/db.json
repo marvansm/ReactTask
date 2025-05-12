@@ -1,0 +1,75 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Soundcore P30i True Wireless ANC Earbud",
+      "category": "Earphones",
+      "img": "https://klbtheme.com/fynode/wp-content/uploads/2024/12/01-45-1024x1024.jpg",
+      "hoverimg": "https://klbtheme.com/fynode/wp-content/uploads/2024/12/03-31-1024x1024.jpg",
+      "oldPrice": 799.99,
+      "newPrice": 699.99
+    },
+    {
+      "id": 2,
+      "title": "Shokz OpenFit Air Open Ear True Wireless Earbuds",
+      "category": "Earphones",
+      "img": "https://klbtheme.com/fynode/wp-content/uploads/2024/12/01-40-1024x1024.jpg",
+      "hoverimg": "https://klbtheme.com/fynode/wp-content/uploads/2024/12/02-35-1024x1024.jpg",
+      "oldPrice": 59.99,
+      "newPrice": 49.99
+    },
+    {
+      "id": 3,
+      "title": "PistonBuds PRO Q30 True ",
+      "category": "Earphones",
+      "img": "https://klbtheme.com/fynode/wp-content/uploads/2024/12/01-30-1024x1024.jpg",
+      "hoverimg": "https://klbtheme.com/fynode/wp-content/uploads/2024/12/03-27-1024x1024.jpg",
+      "oldPrice": 129.99,
+      "newPrice": 99.99
+    },
+    {
+      "id": 4,
+      "title": "PistonBuds PRO Q30 True",
+      "category": "Earphones",
+      "img": "https://klbtheme.com/fynode/wp-content/uploads/2024/12/02-26-1024x1024.jpg",
+      "hoverimg": "https://klbtheme.com/fynode/wp-content/uploads/2024/12/03-20-1024x1024.jpg",
+      "oldPrice": 39.99,
+      "newPrice": 29.99
+    },
+    {
+      "id": 5,
+      "title": "JBL Tune Flex True Wireless Noise Cancelling Earbuds",
+      "category": "Earphones",
+      "img": "https://klbtheme.com/fynode/wp-content/uploads/2024/12/01-29-1024x1024.jpg",
+      "hoverimg": "https://klbtheme.com/fynode/wp-content/uploads/2024/12/02-25-1024x1024.jpg",
+      "oldPrice": 249.99,
+      "newPrice": 199.99
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "title": "Earphones",
+      "stock": "10 Products",
+      "img": "https://klbtheme.com/fynode/wp-content/uploads/2024/12/category-earphones.png"
+    },
+    {
+      "id": 2,
+      "title": "Headphones",
+      "stock": "8 Products",
+      "img": "https://klbtheme.com/fynode/wp-content/uploads/2024/12/category-headphones.png"
+    },
+    {
+      "id": 3,
+      "title": "Microphones",
+      "stock": "8 Products",
+      "img": "https://klbtheme.com/fynode/wp-content/uploads/2024/12/category-microphone.png"
+    },
+    {
+      "id": 4,
+      "title": "Smartwatches",
+      "stock": "7 Products",
+      "img": "https://klbtheme.com/fynode/wp-content/uploads/2024/11/smartwatch.svg"
+    }
+  ]
+}

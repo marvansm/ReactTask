@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.box {
+  font-family: "Inter", sans-serif;
+  .hoverImg {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    z-index: 10;
+  }
+  &:hover {
+    .hoverImg {
+      opacity: 1;
+    }
+    .rating {
+      opacity: 0;
+    }
+    .hoverIcon {
+      opacity: 1;
+    }
+    cursor: pointer;
+    .posIcon {
+      opacity: 1;
+    }
+    .addtocard {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  .posIcon {
+    transition: 0.3s ease-in-out;
+    font-weight: 100;
+    color: rgb(55, 55, 55);
+    opacity: 0;
+    z-index: 20;
+    font-size: 13px;
+  }
+.discount {
+  background-color: black;
+}
+  .rating {
+    opacity: 1;
+    z-index: 30;
+    transition: 0.3s ease-in-out;
+  }
+  .hoverIcon {
+    transition: 0.3s ease-in-out;
+    z-index: 30;
+    opacity: 0;
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      color: black;
+      width: 40px;
+      border-radius: 50%;
+      height: 40px;
+      padding: 4px;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+  .addtocard {
+    transition: 0.2s ease-in-out;
+    opacity: 0;
+    transform: translateY(50%);
+    button {
+      border: 1px solid black;
+      background-color: black;
+      color: white;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
