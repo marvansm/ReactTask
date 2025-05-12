@@ -27,6 +27,16 @@ const NewsSection = () => {
           name={"Elevate Your Audio Experience with Sony Headphones"}
           category={"Fynode: Redefining Modern Tech"}
         />
+        <div className=" text-center flex justify-center flex-col gap-4 my-15">
+          <h3 className="text-[36px] font-medium text-[#212529] font-inter leading-relaxed ">
+            "The design is spectacular, the fit is precise, the ANC <br /> is
+            industry-leading, the battery life is fantastic, and <br />
+            the audio is clear and powerful."
+          </h3>
+          <h4 className="text-[14px] font-inter text-gray-500 ">
+            Jessica Lindström
+          </h4>
+        </div>
       </div>
       <div className="mt-20 grid grid-cols-4 gap-10">
         {Data &&

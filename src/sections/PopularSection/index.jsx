@@ -46,9 +46,12 @@ const PopularSection = () => {
             <button className="flex gap-1 items-center text-[#fff] pt-2.5">
               Shop Now <MoveRight />
             </button>
+
           </div>
+
         </div>
       </div>
+      
     </div>
   );
 };
