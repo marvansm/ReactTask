@@ -4,8 +4,8 @@ import styles from "./style.module.scss";
 
 const Footer = () => {
   return (
-    <div className="container mx-auto px-10 flex items-center justify-between bg-black w-[100%]">
-      <div className="menu flex gap-30 py-8   flex-wrap">
+    <div className=" flex items-center justify-between bg-black w-[100%]">
+      <div className="menu flex gap-50 py-8 items-center justify-center flex-wrap mx-10">
         <ul className="text-[#A1A1AA] flex flex-col gap-4">
           <li>
             <img
@@ -13,6 +13,7 @@ const Footer = () => {
               src="https://klbtheme.com/fynode/wp-content/uploads/2024/11/logo-light.png"
               alt=""
             />
+      
           </li>
           <li>Address: 1234 Fashion Street, Suite 567, New York, NY</li>
           <li>Phone: +123 456 7890</li>
