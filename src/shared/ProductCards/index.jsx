@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./style.module.scss";
 import { clsx } from "clsx";
+import { Link } from "react-router-dom";
 import {
   Search,
   ChevronDown,
@@ -13,6 +14,7 @@ import {
   Eye,
   GitCompare,
 } from "lucide-react";
+import DetailSection from "../../sections/DetailSection";
 
 const ProductCards = ({
   image,
@@ -77,10 +79,14 @@ const ProductCards = ({
           </button>
         </div>
         <div className={clsx(styles.hoverImg)}>
-          <img src={hoverImg} alt="" />
+          <Link to={"/detail"}>
+            <img src={hoverImg} alt="" />
+          </Link>
         </div>
         <div className={(styles.boxImg, "z-30 ")}>
-          <img src={image} alt="" />
+          <Link to={"/detail"}>
+            <img src={image} alt="" />
+          </Link>
         </div>
 
         <div className="boxBody bg-[#F4F4F5] px-9 h-[100%]">

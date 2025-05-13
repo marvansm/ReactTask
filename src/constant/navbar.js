@@ -7,18 +7,18 @@ export const navBar = [
   },
   {
     id: 2,
-    path: "/shop",
+    path: "*",
     name: "Shop",
     icon: " <ChevronDown />",
   },
   {
     id: 3,
-    path: "/headphones",
+    path: "*",
     name: "Headphones",
   },
   {
     id: 4,
-    path: "/accessories",
+    path: "*",
     name: "Accessories",
   },
   {
@@ -28,7 +28,7 @@ export const navBar = [
   },
   {
     id: 6,
-    path: "/contact",
+    path: "*",
     name: "Contact",
   },
 ];

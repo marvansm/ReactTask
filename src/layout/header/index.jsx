@@ -10,6 +10,7 @@ import {
 import { clsx } from "clsx";
 import styles from "../header/style.module.scss";
 import { navBar } from "../../constant/navbar";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -27,10 +28,12 @@ const Header = () => {
           >
             {navBar &&
               navBar.map((item, index) => (
-                <li key={index} className="flex items-center gap-1 text-sm">
-                  {item.name}
-                  <ChevronDown size={16} />
-                </li>
+                <Link to={item.path} key={index}>
+                  <li key={index} className="flex items-center gap-1 text-sm">
+                    {item.name}
+                    <ChevronDown size={16} />
+                  </li>
+                </Link>
               ))}
           </ul>
         </div>
