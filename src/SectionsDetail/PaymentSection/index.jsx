@@ -9,6 +9,7 @@ import { Flex, Progress } from "@radix-ui/themes";
 
 const PaymentSection = () => {
   const DataApi = new ApiServices();
+
   const [Opentap, SetopenTab] = useState("Description");
   const [Data, SetData] = useState([]);
   useEffect(() => {
@@ -75,6 +76,7 @@ const PaymentSection = () => {
           >
             Description
           </button>
+          
           <button
             onClick={() => SetopenTab("Specification")}
             className={`px-4 py-2 font-medium cursor-pointer h-[50px] ${

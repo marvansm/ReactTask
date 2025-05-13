@@ -25,7 +25,7 @@ const Payment = ({ title, name, price, oldprice, features }) => {
   return (
     <div className={clsx(styles.paymentCard)}>
       <h2 className="title text-[13px] text-[#717AA9]">{title}</h2>
-      <h3 className="name text-[40px] font-medium text-[#212529] w-[700px]">
+      <h3 className="name text-[40px]  text-[#212529] max-w-[700px]">
         {name}
       </h3>
       <div className="rating flex items-center gap-6 ">
@@ -59,10 +59,10 @@ const Payment = ({ title, name, price, oldprice, features }) => {
         </ul>
         <p className="font-medium text-[14px]">In Stock</p>
       </div>
-      <p className="features text-[#52525b] text-[14px] w-[700px]">
+      <p className="features text-[#52525b] text-[14px] w-[700px] max-w-[420px]">
         {features}
       </p>
-      <button className="bg-[#fff1e6] text-[#f36507] flex items-center w-[100%] t-[13px] mb-4 mt-6 py-[12px] px-[15px] gap-1.5 rounded-xl">
+      <button className="bg-[#fff1e6] text-[#f36507] flex items-center w-[100%] t-[13px] mb-4 mt-6 py-[12px] px-[15px] gap-1.5 rounded-xl max-w-[700px]">
         <ShoppingCartIcon size={16} /> This product has been added to{" "}
         <span className="font-semibold t-[13px]">2 people's</span> carts.
       </button>

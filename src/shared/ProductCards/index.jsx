@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./style.module.scss";
 import { clsx } from "clsx";
 import { Link } from "react-router-dom";
@@ -13,8 +13,11 @@ import {
   Star,
   Eye,
   GitCompare,
+  PanelRightCloseIcon,
 } from "lucide-react";
 import DetailSection from "../../sections/DetailSection";
+import Payment from "../Payment";
+import { ApiServices } from "../../services/Api";
 
 const ProductCards = ({
   image,
@@ -25,6 +28,14 @@ const ProductCards = ({
   currentPrice,
   className = "",
 }) => {
+  const DataApi = new ApiServices();
+  const [IdData, SetIdData] = useState(null);
+  const [OpenModal, SetOpenModal] = useState(false);
+  useEffect(() => {
+    DataApi.getApibyId("products", IdData).then((res) => {
+      SetIdData(res);
+    });
+  }, [IdData]);
   return (
     <div className={`${className}`}>
       <div
@@ -71,9 +82,10 @@ const ProductCards = ({
             "absolute right-7 top-8 flex flex-col gap-4 z-50"
           )}
         >
-          <button>
+          <button onClick={() => SetOpenModal(true)}>
             <Eye size={19} />
           </button>
+
           <button>
             <GitCompare size={19} />
           </button>
@@ -104,6 +116,38 @@ const ProductCards = ({
           </div>
         </div>
       </div>
+      {OpenModal && (
+        <div className="fixed inset-0 z-[99999] bg-[#00000075] flex items-center justify-center">
+          <div className="modalPage bg-white w-[1100px] h-[600px] rounded-lg shadow-lg relative">
+            <button
+              onClick={() => SetOpenModal(false)}
+              className="absolute top-2.5 right-2.5 cursor-pointer"
+            >
+              <PanelRightCloseIcon />
+            </button>
+            <div className="grid grid-cols-2 p-10 gap-13 overflow-hidden">
+              <div className="left rounded-2xl overflow-hidden object-cover w-[400px] h-[500px]">
+                <img
+                  className="w-full h-full object-cover"
+                  src="https://klbtheme.com/fynode/wp-content/uploads/2024/12/01-14.jpg"
+                  alt=""
+                />
+              </div>
+              <div className="right overflow-hidden">
+                <Payment
+                  title={"Earphones"}
+                  name={"Soundcore P30i True Wireless ANC Earbud"}
+                  price={"24.99"}
+                  oldprice={"44.77"}
+                  features={
+                    "Immerse yourself in premium sound with the Soundcore P30i, featuring advanced active noise cancellation, crystal-clear audio, and ergonomic design for a comfortable listening experience."
+                  }
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
