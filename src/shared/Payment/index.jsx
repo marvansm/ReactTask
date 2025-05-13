@@ -138,4 +138,6 @@ const Payment = ({ title, name, price, oldprice, features }) => {
   );
 };
 
+
+
 export default Payment;

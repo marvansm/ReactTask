@@ -4,6 +4,8 @@ import clsx from "clsx";
 import styles from "./style.module.scss";
 import ProductCards from "../../shared/ProductCards";
 import { ApiServices } from "../../services/Api";
+import { Star, Stars } from "lucide-react";
+import { Flex, Progress } from "@radix-ui/themes";
 
 const PaymentSection = () => {
   const DataApi = new ApiServices();
@@ -14,10 +16,10 @@ const PaymentSection = () => {
       SetData(res);
     });
   }, []);
-
+ 
   return (
     <div className={clsx(styles.font, "container mx-auto px-10")}>
-      <div className="grid grid-cols-2 gap-9">
+      <div className="grid grid-cols-2 gap-15">
         <div className="left flex flex-col gap-3">
           <div className="boxImg relative">
             <img
@@ -192,6 +194,135 @@ const PaymentSection = () => {
                 </tr>
               </tbody>
             </table>
+          )}
+          {Opentap === "Reviews" && (
+            <div>
+              <h1 className="text-[20px] font-medium">
+                3 reviews for Soundcore P30i True Wireless ANC Earbud
+              </h1>
+              <div className="rating  flex items-center gap-5 border-b border-black/10 pb-6">
+                <span className="text-[72px]">4.33</span>
+                <div className="stars flex items-center">
+                  <ul className="flex flex-col gap-2.5">
+                    <li className="flex">
+                      <Star fill="black" />
+                      <Star fill="black" />
+                      <Star fill="black" />
+                      <Star fill="black" />
+                      <Star fill="black" />
+                    </li>
+                    <li>Average of 3 reviews</li>
+                  </ul>
+                </div>
+             
+              </div>
+              <div className="comments mt-9">
+                  <div className="box flex items-start gap-5 border-b border-black/10  py-7">
+                    <div className="boxImg rounded-full overflow-hidden">
+                      <img
+                        src="https://secure.gravatar.com/avatar/b6da06f4950092a3a39e4d30d10addc416c922f68f1453ce00fc6ca452da836e?s=60&d=mm&r=g"
+                        alt=""
+                      />
+                    </div>
+                    <div className="boxBody">
+                      <ul className="flex items-left flex-col">
+                        <li className="flex items-center">
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                        </li>
+                        <li className="text-[14px] text-[#768088]">
+                          admin – December 19, 2024
+                        </li>
+                        <li>
+                          Sed perspiciatis unde omnis iste natus error sit
+                          voluptatem accusantium doloremque laudantium.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="box flex items-start gap-5 border-b border-black/10  py-7">
+                    <div className="boxImg rounded-full overflow-hidden">
+                      <img
+                        src="https://secure.gravatar.com/avatar/b6da06f4950092a3a39e4d30d10addc416c922f68f1453ce00fc6ca452da836e?s=60&d=mm&r=g"
+                        alt=""
+                      />
+                    </div>
+                    <div className="boxBody">
+                      <ul className="flex items-left flex-col">
+                        <li className="flex items-center">
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                        </li>
+                        <li className="text-[14px] text-[#768088]">
+                          admin – December 19, 2024
+                        </li>
+                        <li>
+                          Sed perspiciatis unde omnis iste natus error sit
+                          voluptatem accusantium doloremque laudantium.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="box flex items-start gap-5 border-b border-black/10  py-7">
+                    <div className="boxImg rounded-full overflow-hidden">
+                      <img
+                        src="https://secure.gravatar.com/avatar/b6da06f4950092a3a39e4d30d10addc416c922f68f1453ce00fc6ca452da836e?s=60&d=mm&r=g"
+                        alt=""
+                      />
+                    </div>
+                    <div className="boxBody">
+                      <ul className="flex items-left flex-col">
+                        <li className="flex items-center">
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                        </li>
+                        <li className="text-[14px] text-[#768088]">
+                          admin – December 19, 2024
+                        </li>
+                        <li>
+                          Sed perspiciatis unde omnis iste natus error sit
+                          voluptatem accusantium doloremque laudantium.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="box flex items-start gap-5 border-b border-black/10  py-7">
+                    <div className="boxImg rounded-full overflow-hidden">
+                      <img
+                        src="https://secure.gravatar.com/avatar/b6da06f4950092a3a39e4d30d10addc416c922f68f1453ce00fc6ca452da836e?s=60&d=mm&r=g"
+                        alt=""
+                      />
+                    </div>
+                    <div className="boxBody">
+                      <ul className="flex items-left flex-col">
+                        <li className="flex items-center">
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                          <Star fill="black" size={13} />
+                        </li>
+                        <li className="text-[14px] text-[#768088]">
+                          admin – December 19, 2024
+                        </li>
+                        <li>
+                          Sed perspiciatis unde omnis iste natus error sit
+                          voluptatem accusantium doloremque laudantium.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
           )}
         </div>
       </div>
